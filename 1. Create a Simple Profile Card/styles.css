@@ -1,0 +1,84 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the card */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile card styling */
+.profile-card {
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+    width: 320px;
+    max-width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile image */
+.profile-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+    transition: transform 0.4s;
+}
+
+/* Profile image hover animation */
+.profile-card:hover .profile-img {
+    transform: rotate(360deg);
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.social-icons img {
+    width: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Social media hover animation */
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .social-icons img {
+        width: 25px;
+    }
+}
